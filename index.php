@@ -40,7 +40,7 @@ final class LookingGlass {
   private function render_routers() {
     print('<div class="form-group">');
     print('<label for="routers">Router to use</label>');
-    print('<select size="5" class="form-control" name="routers" id="routers">');
+    print('<select size="15" class="form-control" name="routers" id="routers">');
 
     $first = true;
     foreach (array_keys($this->routers) as $router) {
@@ -61,7 +61,7 @@ final class LookingGlass {
   private function render_commands() {
     print('<div class="form-group">');
     print('<label for="query">Command to issue</label>');
-    print('<select size="5" class="form-control" name="query" id="query">');
+    print('<select size="6" class="form-control" name="query" id="query">');
     print('<option value="bgp" selected="selected">show route IP_ADDRESS</option>');
     print('<option value="as-path-regex">show route as-path-regex AS_PATH_REGEX</option>');
     print('<option value="as">show route AS</option>');
