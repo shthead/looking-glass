@@ -2,6 +2,14 @@
 
 Easy to deploy Looking Glass made in PHP.
 
+This is a fork of the original looking-glass project located here: https://github.com/respawner/looking-glass
+
+The differences in this fork are:
+
+* More sensible defaults for the text boxes (if you have lots of routers)
+* Added support for VyOS
+* Added commands for show bgp/show route (show route was already there but it was named BGP)
+
 ## Requirements
 
   * Webserver such as Apache 2, or Lighttpd, etc…
