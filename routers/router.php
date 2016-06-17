@@ -23,6 +23,7 @@ require_once ('config.php');
 require_once ('bird.php');
 require_once ('cisco.php');
 require_once ('juniper.php');
+require_once ('vyos.php');
 require_once ('quagga.php');
 require_once ('includes/utils.php');
 require_once ('auth/authentication.php');
