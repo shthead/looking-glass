@@ -62,7 +62,8 @@ final class LookingGlass {
     print('<div class="form-group">');
     print('<label for="query">Command to issue</label>');
     print('<select size="6" class="form-control" name="query" id="query">');
-    print('<option value="bgp" selected="selected">show route IP_ADDRESS</option>');
+    print('<option value="bgp" selected="selected">show bgp IP_ADDRESS</option>');
+    print('<option value="route">show route IP_ADDRESS</option>');
     print('<option value="as-path-regex">show route as-path-regex AS_PATH_REGEX</option>');
     print('<option value="as">show route AS</option>');
     print('<option value="ping">ping IP_ADDRESS|HOSTNAME</option>');
