@@ -59,7 +59,7 @@ final class Juniper extends Router {
 		switch ($command) {
 			case 'bgp' :
 				if (match_ipv4 ( $parameter, false ) || match_ipv6 ( $parameter, false )) {
-					$commands [] = 'show route ' . $parameter . ' protocol bgp protocol bgp all detail';
+					$commands [] = 'show route ' . $parameter . ' protocol bgp all detail';
 				} else {
 					throw new Exception ( 'The parameter is not an IPv4/IPv6 address.' );
 				}
