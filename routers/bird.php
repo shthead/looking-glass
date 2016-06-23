@@ -97,7 +97,7 @@ final class Bird extends Router {
 					throw new Exception ( 'The parameter is not an IPv4/IPv6 address.' );
 				}
 				break;
-				
+			
 			case 'route' :
 				if (match_ipv4 ( $parameter, false )) {
 					$commands [] = $birdc . ' \'show route for ' . $parameter . '\'';
