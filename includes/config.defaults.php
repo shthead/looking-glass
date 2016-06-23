@@ -89,7 +89,7 @@ $config = array (
 		// Misc
 		'misc' => array (
 				// Allow private ASN
-				'allow_private_asn' => false,
+				'allow_private_asn' => true,
 				// Allow RFC1918 IPv4 and FD/FC IPv6 as parameters
 				'allow_private_ip' => true,
 				// Allow reserved IPv4 addresses (0.0.0.0/8, 169.254.0.0/16,
@@ -118,6 +118,12 @@ $config = array (
 		'doc' => array (
 				// Documentation for the 'show route' query
 				'bgp' => array (
+						'command' => 'show bgp IP_ADDRESS',
+						'description' => 'Show the best BGP routes to a given destination.',
+						'parameter' => 'The parameter must be a valid destination. Destination means an IPv4/IPv6 address or a subnet. Masks are also accepted as part of a valid IPv4/IPv6 address.<br />RFC1918 addresses, IPv6 starting with FD or FC, and IPv4 reserved ranges (0.0.0.0/8, 169.254.0.0/16, 192.0.2.0/24 and 224.0.0.0/4) may be refused.<br />Please note that some routers always need a mask to be given when looking for an IPv6 address.<br /><br />Example of valid arguments:<br /><ul><li>8.8.8.8</li><li>8.8.4.0/24</li><li>2001:db8:1337::42</li><li>2001:db8::/32</li>'
+				),
+				// Documentation for the 'show route' query
+				'route' => array (
 						'command' => 'show route IP_ADDRESS',
 						'description' => 'Show the best routes to a given destination.',
 						'parameter' => 'The parameter must be a valid destination. Destination means an IPv4/IPv6 address or a subnet. Masks are also accepted as part of a valid IPv4/IPv6 address.<br />RFC1918 addresses, IPv6 starting with FD or FC, and IPv4 reserved ranges (0.0.0.0/8, 169.254.0.0/16, 192.0.2.0/24 and 224.0.0.0/4) may be refused.<br />Please note that some routers always need a mask to be given when looking for an IPv6 address.<br /><br />Example of valid arguments:<br /><ul><li>8.8.8.8</li><li>8.8.4.0/24</li><li>2001:db8:1337::42</li><li>2001:db8::/32</li>' 
